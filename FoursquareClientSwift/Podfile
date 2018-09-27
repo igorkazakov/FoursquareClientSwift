@@ -6,7 +6,9 @@ target 'FoursquareClientSwift' do
   use_frameworks!
 
   pod 'Swinject'
-  pod 'Alamofire', '~> 4.7'
-  pod 'RealmSwift'
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'RxAlamofire'
+  pod 'AlamofireObjectMapper', '~> 5.0'
 end

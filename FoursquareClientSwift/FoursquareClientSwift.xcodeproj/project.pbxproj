@@ -15,6 +15,14 @@
 		CE6AE157215A578C00C5FA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6AE155215A578C00C5FA0C /* LaunchScreen.storyboard */; };
 		CE6AE162215A578C00C5FA0C /* FoursquareClientSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE161215A578C00C5FA0C /* FoursquareClientSwiftTests.swift */; };
 		CE6AE16D215A578C00C5FA0C /* FoursquareClientSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE16C215A578C00C5FA0C /* FoursquareClientSwiftUITests.swift */; };
+		CE6AE18D215B65DF00C5FA0C /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE18C215B65DF00C5FA0C /* Repository.swift */; };
+		CE6AE192215BA12400C5FA0C /* RecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE191215BA12400C5FA0C /* RecommendationsResponse.swift */; };
+		CE6AE194215BA25800C5FA0C /* GroupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE193215BA25800C5FA0C /* GroupItem.swift */; };
+		CE6AE196215BA31B00C5FA0C /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE195215BA31B00C5FA0C /* Venue.swift */; };
+		CE6AE198215BA3AA00C5FA0C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE197215BA3AA00C5FA0C /* Location.swift */; };
+		CE6AE19A215BA46000C5FA0C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE199215BA46000C5FA0C /* Category.swift */; };
+		CE6AE19C215BA4B800C5FA0C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE19B215BA4B800C5FA0C /* Icon.swift */; };
+		CE6AE19F215BBC4B00C5FA0C /* RxMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE19E215BBC4B00C5FA0C /* RxMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		CE6AE168215A578C00C5FA0C /* FoursquareClientSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoursquareClientSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6AE16C215A578C00C5FA0C /* FoursquareClientSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursquareClientSwiftUITests.swift; sourceTree = "<group>"; };
 		CE6AE16E215A578C00C5FA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6AE18C215B65DF00C5FA0C /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CE6AE191215BA12400C5FA0C /* RecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsResponse.swift; sourceTree = "<group>"; };
+		CE6AE193215BA25800C5FA0C /* GroupItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupItem.swift; sourceTree = "<group>"; };
+		CE6AE195215BA31B00C5FA0C /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		CE6AE197215BA3AA00C5FA0C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CE6AE199215BA46000C5FA0C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CE6AE19B215BA4B800C5FA0C /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		CE6AE19E215BBC4B00C5FA0C /* RxMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +141,8 @@
 		CE6AE14B215A578800C5FA0C /* FoursquareClientSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CE6AE19D215BBC3500C5FA0C /* extensions */,
+				CE6AE18B215B655800C5FA0C /* server */,
 				CE6AE14C215A578800C5FA0C /* AppDelegate.swift */,
 				CE6AE14E215A578800C5FA0C /* ViewController.swift */,
 				CE6AE150215A578800C5FA0C /* Main.storyboard */,
@@ -151,6 +169,52 @@
 				CE6AE16E215A578C00C5FA0C /* Info.plist */,
 			);
 			path = FoursquareClientSwiftUITests;
+			sourceTree = "<group>";
+		};
+		CE6AE18B215B655800C5FA0C /* server */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AE18E215B9DCC00C5FA0C /* response */,
+				CE6AE18C215B65DF00C5FA0C /* Repository.swift */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		CE6AE18E215B9DCC00C5FA0C /* response */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AE190215BA0EF00C5FA0C /* recommendations */,
+				CE6AE18F215B9DCC00C5FA0C /* models */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		CE6AE18F215B9DCC00C5FA0C /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CE6AE190215BA0EF00C5FA0C /* recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AE191215BA12400C5FA0C /* RecommendationsResponse.swift */,
+				CE6AE193215BA25800C5FA0C /* GroupItem.swift */,
+				CE6AE195215BA31B00C5FA0C /* Venue.swift */,
+				CE6AE197215BA3AA00C5FA0C /* Location.swift */,
+				CE6AE199215BA46000C5FA0C /* Category.swift */,
+				CE6AE19B215BA4B800C5FA0C /* Icon.swift */,
+			);
+			path = recommendations;
+			sourceTree = "<group>";
+		};
+		CE6AE19D215BBC3500C5FA0C /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AE19E215BBC4B00C5FA0C /* RxMapper.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,18 +355,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoursquareClientSwift/Pods-FoursquareClientSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
@@ -351,8 +417,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6AE194215BA25800C5FA0C /* GroupItem.swift in Sources */,
+				CE6AE196215BA31B00C5FA0C /* Venue.swift in Sources */,
 				CE6AE14F215A578800C5FA0C /* ViewController.swift in Sources */,
+				CE6AE19C215BA4B800C5FA0C /* Icon.swift in Sources */,
 				CE6AE14D215A578800C5FA0C /* AppDelegate.swift in Sources */,
+				CE6AE18D215B65DF00C5FA0C /* Repository.swift in Sources */,
+				CE6AE192215BA12400C5FA0C /* RecommendationsResponse.swift in Sources */,
+				CE6AE198215BA3AA00C5FA0C /* Location.swift in Sources */,
+				CE6AE19F215BBC4B00C5FA0C /* RxMapper.swift in Sources */,
+				CE6AE19A215BA46000C5FA0C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
