@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         disposeBag.insert(Repository.shared.loadVenueRecommendations()
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (result) in
                 print(result)
             }, onError: { (error) in
