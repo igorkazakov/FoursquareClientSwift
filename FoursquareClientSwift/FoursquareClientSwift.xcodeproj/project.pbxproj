@@ -8,9 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		34EC953427AF97C33704FEF2 /* Pods_FoursquareClientSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B761D874D00A6D19421E0503 /* Pods_FoursquareClientSwift.framework */; };
+		CE0EA143215E042C000D5A68 /* Repository+Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA142215E042C000D5A68 /* Repository+Venues.swift */; };
+		CE0EA148215E1A05000D5A68 /* VenuesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA146215E1A05000D5A68 /* VenuesListViewController.swift */; };
+		CE0EA14B215E1A62000D5A68 /* VenuesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA14A215E1A62000D5A68 /* VenuesListPresenter.swift */; };
+		CE0EA159215E3BFA000D5A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA158215E3BFA000D5A68 /* Main.storyboard */; };
+		CE0EA15B215E4128000D5A68 /* VenuesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA15A215E4128000D5A68 /* VenuesList.storyboard */; };
+		CE0EA15E215E41BD000D5A68 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA15D215E41BD000D5A68 /* MapScreenViewController.swift */; };
+		CE0EA160215E41CD000D5A68 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA15F215E41CD000D5A68 /* MapScreen.storyboard */; };
+		CE0EA163215E569F000D5A68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA162215E569F000D5A68 /* MainViewController.swift */; };
+		CE0EA165215E5860000D5A68 /* UITabBarController+BottomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA164215E5860000D5A68 /* UITabBarController+BottomMargin.swift */; };
+		CE0EA168215E5BD1000D5A68 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA167215E5BD1000D5A68 /* LocationManager.swift */; };
+		CE0EA16A215E6056000D5A68 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0EA169215E6056000D5A68 /* CoreLocation.framework */; };
+		CE0EA16D2161F7C4000D5A68 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA16C2161F7C4000D5A68 /* VenueViewModel.swift */; };
+		CE0EA17121620C03000D5A68 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA16F21620C03000D5A68 /* VenueTableViewCell.swift */; };
+		CE0EA17221620C03000D5A68 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA17021620C03000D5A68 /* VenueTableViewCell.xib */; };
 		CE6AE14D215A578800C5FA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE14C215A578800C5FA0C /* AppDelegate.swift */; };
-		CE6AE14F215A578800C5FA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE14E215A578800C5FA0C /* ViewController.swift */; };
-		CE6AE152215A578800C5FA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6AE150215A578800C5FA0C /* Main.storyboard */; };
 		CE6AE154215A578C00C5FA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6AE153215A578C00C5FA0C /* Assets.xcassets */; };
 		CE6AE157215A578C00C5FA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6AE155215A578C00C5FA0C /* LaunchScreen.storyboard */; };
 		CE6AE162215A578C00C5FA0C /* FoursquareClientSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE161215A578C00C5FA0C /* FoursquareClientSwiftTests.swift */; };
@@ -48,10 +60,22 @@
 		9421CB94098320C60851D06A /* Pods-FoursquareClientSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClientSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoursquareClientSwift/Pods-FoursquareClientSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B761D874D00A6D19421E0503 /* Pods_FoursquareClientSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareClientSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49A99608114374EFEF88C27 /* Pods-FoursquareClientSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareClientSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoursquareClientSwift/Pods-FoursquareClientSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0EA142215E042C000D5A68 /* Repository+Venues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Venues.swift"; sourceTree = "<group>"; };
+		CE0EA146215E1A05000D5A68 /* VenuesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListViewController.swift; sourceTree = "<group>"; };
+		CE0EA14A215E1A62000D5A68 /* VenuesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListPresenter.swift; sourceTree = "<group>"; };
+		CE0EA158215E3BFA000D5A68 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CE0EA15A215E4128000D5A68 /* VenuesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VenuesList.storyboard; sourceTree = "<group>"; };
+		CE0EA15D215E41BD000D5A68 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		CE0EA15F215E41CD000D5A68 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
+		CE0EA162215E569F000D5A68 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE0EA164215E5860000D5A68 /* UITabBarController+BottomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+BottomMargin.swift"; sourceTree = "<group>"; };
+		CE0EA167215E5BD1000D5A68 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CE0EA169215E6056000D5A68 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE0EA16C2161F7C4000D5A68 /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
+		CE0EA16F21620C03000D5A68 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		CE0EA17021620C03000D5A68 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
 		CE6AE149215A578800C5FA0C /* FoursquareClientSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareClientSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6AE14C215A578800C5FA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE6AE14E215A578800C5FA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE6AE151215A578800C5FA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE6AE153215A578C00C5FA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE6AE156215A578C00C5FA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6AE158215A578C00C5FA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0EA16A215E6056000D5A68 /* CoreLocation.framework in Frameworks */,
 				34EC953427AF97C33704FEF2 /* Pods_FoursquareClientSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +125,7 @@
 		28ECA81451D9FB4D3F3729A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE0EA169215E6056000D5A68 /* CoreLocation.framework */,
 				B761D874D00A6D19421E0503 /* Pods_FoursquareClientSwift.framework */,
 				8606A83E9E0058C7CF4859A7 /* Pods_FoursquareClientSwiftTests.framework */,
 				0D69FBC2166267772205C103 /* Pods_FoursquareClientSwiftUITests.framework */,
@@ -114,6 +140,78 @@
 				9421CB94098320C60851D06A /* Pods-FoursquareClientSwift.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE0EA141215E02EB000D5A68 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AE18C215B65DF00C5FA0C /* Repository.swift */,
+				CE0EA142215E042C000D5A68 /* Repository+Venues.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CE0EA144215E1959000D5A68 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA15C215E41A6000D5A68 /* MapScreen */,
+				CE0EA14C215E1EAA000D5A68 /* MainScreen */,
+				CE0EA145215E1997000D5A68 /* VenuesList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CE0EA145215E1997000D5A68 /* VenuesList */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA146215E1A05000D5A68 /* VenuesListViewController.swift */,
+				CE0EA14A215E1A62000D5A68 /* VenuesListPresenter.swift */,
+				CE0EA15A215E4128000D5A68 /* VenuesList.storyboard */,
+			);
+			path = VenuesList;
+			sourceTree = "<group>";
+		};
+		CE0EA14C215E1EAA000D5A68 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA158215E3BFA000D5A68 /* Main.storyboard */,
+				CE0EA162215E569F000D5A68 /* MainViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		CE0EA15C215E41A6000D5A68 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA15D215E41BD000D5A68 /* MapScreenViewController.swift */,
+				CE0EA15F215E41CD000D5A68 /* MapScreen.storyboard */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		CE0EA166215E5BBB000D5A68 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA167215E5BD1000D5A68 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		CE0EA16B2161F6C3000D5A68 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA16C2161F7C4000D5A68 /* VenueViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE0EA16E21620BAD000D5A68 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA16F21620C03000D5A68 /* VenueTableViewCell.swift */,
+				CE0EA17021620C03000D5A68 /* VenueTableViewCell.xib */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 		CE6AE140215A578800C5FA0C = {
@@ -141,11 +239,13 @@
 		CE6AE14B215A578800C5FA0C /* FoursquareClientSwift */ = {
 			isa = PBXGroup;
 			children = (
-				CE6AE19D215BBC3500C5FA0C /* extensions */,
-				CE6AE18B215B655800C5FA0C /* server */,
+				CE0EA16E21620BAD000D5A68 /* TableCells */,
+				CE0EA16B2161F6C3000D5A68 /* ViewModels */,
+				CE0EA166215E5BBB000D5A68 /* LocationManager */,
+				CE0EA144215E1959000D5A68 /* Screens */,
+				CE6AE19D215BBC3500C5FA0C /* Extensions */,
+				CE6AE18B215B655800C5FA0C /* Server */,
 				CE6AE14C215A578800C5FA0C /* AppDelegate.swift */,
-				CE6AE14E215A578800C5FA0C /* ViewController.swift */,
-				CE6AE150215A578800C5FA0C /* Main.storyboard */,
 				CE6AE153215A578C00C5FA0C /* Assets.xcassets */,
 				CE6AE155215A578C00C5FA0C /* LaunchScreen.storyboard */,
 				CE6AE158215A578C00C5FA0C /* Info.plist */,
@@ -171,50 +271,51 @@
 			path = FoursquareClientSwiftUITests;
 			sourceTree = "<group>";
 		};
-		CE6AE18B215B655800C5FA0C /* server */ = {
+		CE6AE18B215B655800C5FA0C /* Server */ = {
 			isa = PBXGroup;
 			children = (
-				CE6AE18E215B9DCC00C5FA0C /* response */,
-				CE6AE18C215B65DF00C5FA0C /* Repository.swift */,
+				CE0EA141215E02EB000D5A68 /* Repository */,
+				CE6AE18E215B9DCC00C5FA0C /* Response */,
 			);
-			path = server;
+			path = Server;
 			sourceTree = "<group>";
 		};
-		CE6AE18E215B9DCC00C5FA0C /* response */ = {
+		CE6AE18E215B9DCC00C5FA0C /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				CE6AE190215BA0EF00C5FA0C /* recommendations */,
-				CE6AE18F215B9DCC00C5FA0C /* models */,
+				CE6AE190215BA0EF00C5FA0C /* Recommendations */,
+				CE6AE18F215B9DCC00C5FA0C /* Models */,
 			);
-			path = response;
+			path = Response;
 			sourceTree = "<group>";
 		};
-		CE6AE18F215B9DCC00C5FA0C /* models */ = {
+		CE6AE18F215B9DCC00C5FA0C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
-		CE6AE190215BA0EF00C5FA0C /* recommendations */ = {
-			isa = PBXGroup;
-			children = (
-				CE6AE191215BA12400C5FA0C /* RecommendationsResponse.swift */,
-				CE6AE193215BA25800C5FA0C /* GroupItem.swift */,
 				CE6AE195215BA31B00C5FA0C /* Venue.swift */,
 				CE6AE197215BA3AA00C5FA0C /* Location.swift */,
 				CE6AE199215BA46000C5FA0C /* Category.swift */,
 				CE6AE19B215BA4B800C5FA0C /* Icon.swift */,
 			);
-			path = recommendations;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		CE6AE19D215BBC3500C5FA0C /* extensions */ = {
+		CE6AE190215BA0EF00C5FA0C /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				CE6AE191215BA12400C5FA0C /* RecommendationsResponse.swift */,
+				CE6AE193215BA25800C5FA0C /* GroupItem.swift */,
+			);
+			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		CE6AE19D215BBC3500C5FA0C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CE6AE19E215BBC4B00C5FA0C /* RxMapper.swift */,
+				CE0EA164215E5860000D5A68 /* UITabBarController+BottomMargin.swift */,
 			);
-			path = extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +425,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0EA160215E41CD000D5A68 /* MapScreen.storyboard in Resources */,
 				CE6AE157215A578C00C5FA0C /* LaunchScreen.storyboard in Resources */,
 				CE6AE154215A578C00C5FA0C /* Assets.xcassets in Resources */,
-				CE6AE152215A578800C5FA0C /* Main.storyboard in Resources */,
+				CE0EA159215E3BFA000D5A68 /* Main.storyboard in Resources */,
+				CE0EA15B215E4128000D5A68 /* VenuesList.storyboard in Resources */,
+				CE0EA17221620C03000D5A68 /* VenueTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,15 +522,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6AE194215BA25800C5FA0C /* GroupItem.swift in Sources */,
+				CE0EA16D2161F7C4000D5A68 /* VenueViewModel.swift in Sources */,
 				CE6AE196215BA31B00C5FA0C /* Venue.swift in Sources */,
-				CE6AE14F215A578800C5FA0C /* ViewController.swift in Sources */,
+				CE0EA17121620C03000D5A68 /* VenueTableViewCell.swift in Sources */,
+				CE0EA143215E042C000D5A68 /* Repository+Venues.swift in Sources */,
 				CE6AE19C215BA4B800C5FA0C /* Icon.swift in Sources */,
+				CE0EA168215E5BD1000D5A68 /* LocationManager.swift in Sources */,
+				CE0EA148215E1A05000D5A68 /* VenuesListViewController.swift in Sources */,
 				CE6AE14D215A578800C5FA0C /* AppDelegate.swift in Sources */,
 				CE6AE18D215B65DF00C5FA0C /* Repository.swift in Sources */,
+				CE0EA163215E569F000D5A68 /* MainViewController.swift in Sources */,
 				CE6AE192215BA12400C5FA0C /* RecommendationsResponse.swift in Sources */,
+				CE0EA15E215E41BD000D5A68 /* MapScreenViewController.swift in Sources */,
+				CE0EA14B215E1A62000D5A68 /* VenuesListPresenter.swift in Sources */,
 				CE6AE198215BA3AA00C5FA0C /* Location.swift in Sources */,
 				CE6AE19F215BBC4B00C5FA0C /* RxMapper.swift in Sources */,
 				CE6AE19A215BA46000C5FA0C /* Category.swift in Sources */,
+				CE0EA165215E5860000D5A68 /* UITabBarController+BottomMargin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,14 +574,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CE6AE150215A578800C5FA0C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE6AE151215A578800C5FA0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE6AE155215A578C00C5FA0C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -602,7 +706,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoursquareClientSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "super-massiv-company.FoursquareClientSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -617,7 +724,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoursquareClientSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "super-massiv-company.FoursquareClientSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -632,7 +742,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoursquareClientSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "super-massiv-company.FoursquareClientSwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -648,7 +762,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoursquareClientSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "super-massiv-company.FoursquareClientSwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -663,7 +781,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoursquareClientSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "super-massiv-company.FoursquareClientSwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -678,7 +800,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoursquareClientSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "super-massiv-company.FoursquareClientSwiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

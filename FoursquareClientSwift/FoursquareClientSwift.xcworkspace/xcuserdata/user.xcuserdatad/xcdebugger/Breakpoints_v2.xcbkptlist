@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FoursquareClientSwift/AppDelegate.swift"
-            timestampString = "559750599.344658"
+            filePath = "FoursquareClientSwift/Screens/VenuesList/VenuesListPresenter.swift"
+            timestampString = "560073320.2909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadVenuesWithLocation(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoursquareClientSwift/Screens/VenuesList/VenuesListPresenter.swift"
+            timestampString = "560073320.4852999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "loadVenuesWithLocation(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
