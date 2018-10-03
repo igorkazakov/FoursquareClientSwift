@@ -13,8 +13,6 @@
 		CE0EA14B215E1A62000D5A68 /* VenuesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA14A215E1A62000D5A68 /* VenuesListPresenter.swift */; };
 		CE0EA159215E3BFA000D5A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA158215E3BFA000D5A68 /* Main.storyboard */; };
 		CE0EA15B215E4128000D5A68 /* VenuesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA15A215E4128000D5A68 /* VenuesList.storyboard */; };
-		CE0EA15E215E41BD000D5A68 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA15D215E41BD000D5A68 /* MapScreenViewController.swift */; };
-		CE0EA160215E41CD000D5A68 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA15F215E41CD000D5A68 /* MapScreen.storyboard */; };
 		CE0EA163215E569F000D5A68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA162215E569F000D5A68 /* MainViewController.swift */; };
 		CE0EA165215E5860000D5A68 /* UITabBarController+BottomMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA164215E5860000D5A68 /* UITabBarController+BottomMargin.swift */; };
 		CE0EA168215E5BD1000D5A68 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA167215E5BD1000D5A68 /* LocationManager.swift */; };
@@ -22,6 +20,14 @@
 		CE0EA16D2161F7C4000D5A68 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA16C2161F7C4000D5A68 /* VenueViewModel.swift */; };
 		CE0EA17121620C03000D5A68 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA16F21620C03000D5A68 /* VenueTableViewCell.swift */; };
 		CE0EA17221620C03000D5A68 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA17021620C03000D5A68 /* VenueTableViewCell.xib */; };
+		CE0EA17621637D2F000D5A68 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA17521637D2F000D5A68 /* MapViewController.swift */; };
+		CE0EA17821637D3A000D5A68 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0EA17721637D3A000D5A68 /* Map.storyboard */; };
+		CE0EA17A21637F49000D5A68 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA17921637F49000D5A68 /* MapPresenter.swift */; };
+		CE0EA17E2163978D000D5A68 /* VenueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA17D2163978D000D5A68 /* VenueAnnotation.swift */; };
+		CE0EA1832163A674000D5A68 /* VenueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA1822163A674000D5A68 /* VenueEntity.swift */; };
+		CE0EA1852163B0A1000D5A68 /* LocationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA1842163B0A1000D5A68 /* LocationEntity.swift */; };
+		CE0EA1872163B0B1000D5A68 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA1862163B0B1000D5A68 /* CategoryEntity.swift */; };
+		CE0EA1892163B112000D5A68 /* IconEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EA1882163B112000D5A68 /* IconEntity.swift */; };
 		CE6AE14D215A578800C5FA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6AE14C215A578800C5FA0C /* AppDelegate.swift */; };
 		CE6AE154215A578C00C5FA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6AE153215A578C00C5FA0C /* Assets.xcassets */; };
 		CE6AE157215A578C00C5FA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE6AE155215A578C00C5FA0C /* LaunchScreen.storyboard */; };
@@ -65,8 +71,6 @@
 		CE0EA14A215E1A62000D5A68 /* VenuesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListPresenter.swift; sourceTree = "<group>"; };
 		CE0EA158215E3BFA000D5A68 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE0EA15A215E4128000D5A68 /* VenuesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VenuesList.storyboard; sourceTree = "<group>"; };
-		CE0EA15D215E41BD000D5A68 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
-		CE0EA15F215E41CD000D5A68 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
 		CE0EA162215E569F000D5A68 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE0EA164215E5860000D5A68 /* UITabBarController+BottomMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+BottomMargin.swift"; sourceTree = "<group>"; };
 		CE0EA167215E5BD1000D5A68 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 		CE0EA16C2161F7C4000D5A68 /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
 		CE0EA16F21620C03000D5A68 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
 		CE0EA17021620C03000D5A68 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
+		CE0EA17521637D2F000D5A68 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CE0EA17721637D3A000D5A68 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		CE0EA17921637F49000D5A68 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		CE0EA17D2163978D000D5A68 /* VenueAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAnnotation.swift; sourceTree = "<group>"; };
+		CE0EA1822163A674000D5A68 /* VenueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueEntity.swift; sourceTree = "<group>"; };
+		CE0EA1842163B0A1000D5A68 /* LocationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEntity.swift; sourceTree = "<group>"; };
+		CE0EA1862163B0B1000D5A68 /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		CE0EA1882163B112000D5A68 /* IconEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconEntity.swift; sourceTree = "<group>"; };
 		CE6AE149215A578800C5FA0C /* FoursquareClientSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareClientSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6AE14C215A578800C5FA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE6AE153215A578C00C5FA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,7 +166,7 @@
 		CE0EA144215E1959000D5A68 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				CE0EA15C215E41A6000D5A68 /* MapScreen */,
+				CE0EA15C215E41A6000D5A68 /* Map */,
 				CE0EA14C215E1EAA000D5A68 /* MainScreen */,
 				CE0EA145215E1997000D5A68 /* VenuesList */,
 			);
@@ -174,19 +186,20 @@
 		CE0EA14C215E1EAA000D5A68 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				CE0EA158215E3BFA000D5A68 /* Main.storyboard */,
 				CE0EA162215E569F000D5A68 /* MainViewController.swift */,
+				CE0EA158215E3BFA000D5A68 /* Main.storyboard */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
-		CE0EA15C215E41A6000D5A68 /* MapScreen */ = {
+		CE0EA15C215E41A6000D5A68 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				CE0EA15D215E41BD000D5A68 /* MapScreenViewController.swift */,
-				CE0EA15F215E41CD000D5A68 /* MapScreen.storyboard */,
+				CE0EA17521637D2F000D5A68 /* MapViewController.swift */,
+				CE0EA17921637F49000D5A68 /* MapPresenter.swift */,
+				CE0EA17721637D3A000D5A68 /* Map.storyboard */,
 			);
-			path = MapScreen;
+			path = Map;
 			sourceTree = "<group>";
 		};
 		CE0EA166215E5BBB000D5A68 /* LocationManager */ = {
@@ -214,6 +227,51 @@
 			path = TableCells;
 			sourceTree = "<group>";
 		};
+		CE0EA17B2163972D000D5A68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA17C21639778000D5A68 /* MapModels */,
+				CE6AE18F215B9DCC00C5FA0C /* ServerModels */,
+				CE0EA16B2161F6C3000D5A68 /* ViewModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE0EA17C21639778000D5A68 /* MapModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA17D2163978D000D5A68 /* VenueAnnotation.swift */,
+			);
+			path = MapModels;
+			sourceTree = "<group>";
+		};
+		CE0EA17F2163A5F7000D5A68 /* Db */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA1802163A617000D5A68 /* Dao */,
+				CE0EA1812163A617000D5A68 /* Entities */,
+			);
+			path = Db;
+			sourceTree = "<group>";
+		};
+		CE0EA1802163A617000D5A68 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		CE0EA1812163A617000D5A68 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EA1822163A674000D5A68 /* VenueEntity.swift */,
+				CE0EA1842163B0A1000D5A68 /* LocationEntity.swift */,
+				CE0EA1862163B0B1000D5A68 /* CategoryEntity.swift */,
+				CE0EA1882163B112000D5A68 /* IconEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		CE6AE140215A578800C5FA0C = {
 			isa = PBXGroup;
 			children = (
@@ -239,8 +297,9 @@
 		CE6AE14B215A578800C5FA0C /* FoursquareClientSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CE0EA17F2163A5F7000D5A68 /* Db */,
+				CE0EA17B2163972D000D5A68 /* Models */,
 				CE0EA16E21620BAD000D5A68 /* TableCells */,
-				CE0EA16B2161F6C3000D5A68 /* ViewModels */,
 				CE0EA166215E5BBB000D5A68 /* LocationManager */,
 				CE0EA144215E1959000D5A68 /* Screens */,
 				CE6AE19D215BBC3500C5FA0C /* Extensions */,
@@ -284,12 +343,11 @@
 			isa = PBXGroup;
 			children = (
 				CE6AE190215BA0EF00C5FA0C /* Recommendations */,
-				CE6AE18F215B9DCC00C5FA0C /* Models */,
 			);
 			path = Response;
 			sourceTree = "<group>";
 		};
-		CE6AE18F215B9DCC00C5FA0C /* Models */ = {
+		CE6AE18F215B9DCC00C5FA0C /* ServerModels */ = {
 			isa = PBXGroup;
 			children = (
 				CE6AE195215BA31B00C5FA0C /* Venue.swift */,
@@ -297,7 +355,7 @@
 				CE6AE199215BA46000C5FA0C /* Category.swift */,
 				CE6AE19B215BA4B800C5FA0C /* Icon.swift */,
 			);
-			path = Models;
+			path = ServerModels;
 			sourceTree = "<group>";
 		};
 		CE6AE190215BA0EF00C5FA0C /* Recommendations */ = {
@@ -425,12 +483,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0EA160215E41CD000D5A68 /* MapScreen.storyboard in Resources */,
 				CE6AE157215A578C00C5FA0C /* LaunchScreen.storyboard in Resources */,
 				CE6AE154215A578C00C5FA0C /* Assets.xcassets in Resources */,
 				CE0EA159215E3BFA000D5A68 /* Main.storyboard in Resources */,
 				CE0EA15B215E4128000D5A68 /* VenuesList.storyboard in Resources */,
 				CE0EA17221620C03000D5A68 /* VenueTableViewCell.xib in Resources */,
+				CE0EA17821637D3A000D5A68 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +519,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -471,6 +531,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -523,22 +585,28 @@
 			files = (
 				CE6AE194215BA25800C5FA0C /* GroupItem.swift in Sources */,
 				CE0EA16D2161F7C4000D5A68 /* VenueViewModel.swift in Sources */,
+				CE0EA1872163B0B1000D5A68 /* CategoryEntity.swift in Sources */,
 				CE6AE196215BA31B00C5FA0C /* Venue.swift in Sources */,
 				CE0EA17121620C03000D5A68 /* VenueTableViewCell.swift in Sources */,
 				CE0EA143215E042C000D5A68 /* Repository+Venues.swift in Sources */,
 				CE6AE19C215BA4B800C5FA0C /* Icon.swift in Sources */,
 				CE0EA168215E5BD1000D5A68 /* LocationManager.swift in Sources */,
 				CE0EA148215E1A05000D5A68 /* VenuesListViewController.swift in Sources */,
+				CE0EA1892163B112000D5A68 /* IconEntity.swift in Sources */,
+				CE0EA17A21637F49000D5A68 /* MapPresenter.swift in Sources */,
 				CE6AE14D215A578800C5FA0C /* AppDelegate.swift in Sources */,
 				CE6AE18D215B65DF00C5FA0C /* Repository.swift in Sources */,
 				CE0EA163215E569F000D5A68 /* MainViewController.swift in Sources */,
 				CE6AE192215BA12400C5FA0C /* RecommendationsResponse.swift in Sources */,
-				CE0EA15E215E41BD000D5A68 /* MapScreenViewController.swift in Sources */,
 				CE0EA14B215E1A62000D5A68 /* VenuesListPresenter.swift in Sources */,
+				CE0EA17E2163978D000D5A68 /* VenueAnnotation.swift in Sources */,
+				CE0EA17621637D2F000D5A68 /* MapViewController.swift in Sources */,
 				CE6AE198215BA3AA00C5FA0C /* Location.swift in Sources */,
 				CE6AE19F215BBC4B00C5FA0C /* RxMapper.swift in Sources */,
+				CE0EA1832163A674000D5A68 /* VenueEntity.swift in Sources */,
 				CE6AE19A215BA46000C5FA0C /* Category.swift in Sources */,
 				CE0EA165215E5860000D5A68 /* UITabBarController+BottomMargin.swift in Sources */,
+				CE0EA1852163B0A1000D5A68 /* LocationEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

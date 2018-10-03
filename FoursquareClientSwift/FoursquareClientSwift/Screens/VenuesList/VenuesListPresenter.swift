@@ -61,6 +61,7 @@ class VenuesListPresenter: NSObject {
             })
             .subscribe(onNext: { (viewModels) in
                 self.venueModels = viewModels
+                self.view?.showVenues(viewModels)
             }, onError: { (error) in
                 print(error)
             }, onCompleted: {

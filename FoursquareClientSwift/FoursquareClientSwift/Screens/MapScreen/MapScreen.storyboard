@@ -18,17 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="MapScreenViewController" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kaj-ia-GBb">
-                                <rect key="frame" x="71" y="282" width="262" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RGR-q8-RKD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uiC-vR-qKH" id="nHO-FZ-hGz"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RGR-q8-RKD" firstAttribute="trailing" secondItem="aVT-92-3fx" secondAttribute="trailing" id="Iwk-mk-fVc"/>
+                            <constraint firstItem="RGR-q8-RKD" firstAttribute="top" secondItem="aVT-92-3fx" secondAttribute="top" id="ODt-sq-h5d"/>
+                            <constraint firstItem="RGR-q8-RKD" firstAttribute="bottom" secondItem="aVT-92-3fx" secondAttribute="bottom" id="cJm-Vy-uIL"/>
+                            <constraint firstItem="RGR-q8-RKD" firstAttribute="leading" secondItem="aVT-92-3fx" secondAttribute="leading" id="orB-YR-anV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aVT-92-3fx"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="RGR-q8-RKD" id="pqL-0S-HnE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9O-Dv-tBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

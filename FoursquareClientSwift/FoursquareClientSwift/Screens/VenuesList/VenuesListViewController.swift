@@ -10,21 +10,26 @@ import UIKit
 
 protocol VenuesListViewProtocol: class {
     
-    func showVenues(_ venues: [Venue])
+    func showVenues(_ venues: [VenueViewModel])
 }
 
 class VenuesListViewController: UIViewController, VenuesListViewProtocol {
 
     private var presenter: VenuesListPresenter?
+    private var venueModels = [VenueViewModel]()
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let nibName = UINib(nibName: String(describing: VenueTableViewCell.self), bundle:nil)
+        self.tableView.register(nibName, forCellReuseIdentifier: VenueTableViewCell.reuseIdentifier)
         presenter = VenuesListPresenter(view: self, repository: Repository.shared)
     }
     
-    func showVenues(_ venues: [Venue]) {
-        
+    func showVenues(_ venues: [VenueViewModel]) {
+        self.venueModels = venues
+        self.tableView.reloadData()
     }
 }
 
@@ -42,11 +47,18 @@ extension VenuesListViewController: UITableViewDelegate {
 }
 
 extension VenuesListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return self.venueModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:VenueTableViewCell.reuseIdentifier, for: indexPath) as? VenueTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of NotificationCell.")
+        }
+        
+        cell.initWithViewModel(self.venueModels[indexPath.row])
+        return cell;
     }
 }
