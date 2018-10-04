@@ -8,18 +8,27 @@
 
 import UIKit
 import ObjectMapper
+import RealmSwift
+import Realm
 
-class Location: Mappable {
+class Location: Object, Mappable {
     
-    var address: String?
-    var lat: Double?
-    var lng: Double?
-    var distance: Int?
-    var city: String?
-    var state: String?
-    var country: String?
+    @objc dynamic var id = UUID().uuidString
+    @objc dynamic var address: String? = nil
+    @objc dynamic var lat = 0.0
+    @objc dynamic var lng = 0.0
+    @objc dynamic var distance = 0
+    @objc dynamic var city: String? = nil
+    @objc dynamic var state: String? = nil
+    @objc dynamic var country: String? = nil
     
-    required init?(map: Map) {}
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
     
     func mapping(map: Map) {
         address <- map["address"]

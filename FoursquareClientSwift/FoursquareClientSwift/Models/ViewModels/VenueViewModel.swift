@@ -33,7 +33,7 @@ class VenueViewModel: NSObject {
             self.address?.append(" \(address)")
         }
         
-        self.category = model.categories?.first?.pluralName ?? "Без категории"
+        self.category = model.categories.first?.pluralName ?? "Без категории"
         self.id = model.id
     }
 }

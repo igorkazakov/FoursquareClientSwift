@@ -8,15 +8,23 @@
 
 import UIKit
 import ObjectMapper
+import RealmSwift
+import Realm
 
-class Venue: Mappable {
+class Venue: Object, Mappable {
     
-    var id: String?
-    var name: String?
-    var location: Location?
-    var categories: [Category]?
+    @objc dynamic var id: String = ""
+    @objc dynamic var name: String? = nil
+    @objc dynamic var location: Location? = nil
+    var categories = List<Category>()
     
-    required init?(map: Map) {}
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
     
     func mapping(map: Map) {
         id <- map["venue.id"]

@@ -16,6 +16,9 @@ PODS:
     - RxSwift (~> 4)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
   - Swinject (2.5.0)
 
@@ -25,6 +28,7 @@ DEPENDENCIES:
   - RealmSwift
   - RxAlamofire
   - RxCocoa
+  - RxRealm
   - RxSwift
   - Swinject
 
@@ -36,9 +40,10 @@ SPEC CHECKSUMS:
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
 
-PODFILE CHECKSUM: be6e798443a843b8b0fb88344e7d5e67c4bc2141
+PODFILE CHECKSUM: 7919c17cb9aec5e4f261a6b434f51d1754b62611
 
 COCOAPODS: 1.4.0

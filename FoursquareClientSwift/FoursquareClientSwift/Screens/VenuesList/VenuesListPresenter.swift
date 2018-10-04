@@ -10,6 +10,7 @@ import Foundation
 import MapKit
 import CoreLocation
 import RxSwift
+import RealmSwift
 
 class VenuesListPresenter: NSObject {
     
@@ -45,7 +46,6 @@ class VenuesListPresenter: NSObject {
     private func loadVenuesWithLocation(_ location: String) {
         
         guard let repository = self.repository else { return }
-        
         print("show loading")
         
         disposeBag.insert(repository.loadVenueRecommendationsWithLocation(location)
@@ -57,6 +57,7 @@ class VenuesListPresenter: NSObject {
                     VenueViewModel(item)
                 })
                 
+                VenuesDao.saveVenues(venues)
                 return Observable.of(viewModels)
             })
             .subscribe(onNext: { (viewModels) in

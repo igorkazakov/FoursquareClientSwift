@@ -8,13 +8,22 @@
 
 import UIKit
 import ObjectMapper
+import RealmSwift
+import Realm
 
-class Icon: Mappable {
+class Icon: Object, Mappable {
     
-    var prefix: String?
-    var suffix: String?
+    @objc dynamic var id = UUID().uuidString
+    @objc dynamic var prefix: String? = nil
+    @objc dynamic var suffix: String? = nil
     
-    required init?(map: Map) {}
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
     
     func mapping(map: Map) {
         prefix <- map["prefix"]

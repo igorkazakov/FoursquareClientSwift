@@ -12,4 +12,5 @@ target 'FoursquareClientSwift' do
   pod 'RxAlamofire'
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'RealmSwift'
+  pod 'RxRealm'
 end
