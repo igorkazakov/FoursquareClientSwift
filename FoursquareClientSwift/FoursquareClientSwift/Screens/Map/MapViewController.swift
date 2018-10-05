@@ -14,13 +14,14 @@ protocol MapViewProtocol: class {
     
     func showVenues(_ annotations: [VenueAnnotation])
     func initMap()
-    func showMyLocation()
+    func showMyLocation(annotation: MKPointAnnotation)
 }
 
 class MapViewController: UIViewController, MapViewProtocol {
     
     private var presenter: MapPresenter?
     private var annotations = [VenueAnnotation]()
+    private var myLocationAnnotation: MKPointAnnotation?
     private let locationManager = CLLocationManager()
     @IBOutlet weak var mapView: MKMapView!
     
@@ -42,10 +43,14 @@ class MapViewController: UIViewController, MapViewProtocol {
         self.mapView.isScrollEnabled = true
     }
     
-    func showMyLocation() {
-        if let coor = self.mapView.userLocation.location?.coordinate {
-            self.mapView.setCenter(coor, animated: true)
+    func showMyLocation(annotation: MKPointAnnotation) {
+        
+        if let myAnnotation = self.myLocationAnnotation {
+            self.mapView.removeAnnotation(myAnnotation)
         }
+        
+        self.myLocationAnnotation = annotation
+        self.mapView.addAnnotation(annotation)
     }
     
     private func fitAll() {

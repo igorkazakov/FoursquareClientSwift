@@ -16,7 +16,6 @@ class MapPresenter: NSObject, CLLocationManagerDelegate {
     private weak var view: MapViewProtocol?
     private var repository: MapRepositoryProtocol?
     private let disposeBag = DisposeBag()
-    private var myLocationAnnotation: VenueAnnotation?
     private var annotations = [VenueAnnotation]()
     private let locationManager = CLLocationManager()
     
@@ -25,7 +24,6 @@ class MapPresenter: NSObject, CLLocationManagerDelegate {
         self.view = view
         self.repository = repository
         self.initLocation()
-        self.showMyLocation()
         self.fetchVenues()
     }
     
@@ -34,8 +32,9 @@ class MapPresenter: NSObject, CLLocationManagerDelegate {
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
-            locationManager.distanceFilter = 400
+            locationManager.distanceFilter = 100
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.startUpdatingLocation()
         }
         
         self.view?.initMap()
@@ -43,14 +42,10 @@ class MapPresenter: NSObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        let annotation = VenueAnnotation(title: "My location", coordinate: locValue)
-        self.myLocationAnnotation = annotation
-        self.locationManager.stopUpdatingLocation()
-    }
-    
-    func showMyLocation() {
-        self.locationManager.startUpdatingLocation()
-        self.view?.showMyLocation()
+        let annotation = MKPointAnnotation()
+        annotation.title = "My location"
+        annotation.coordinate = locValue
+        self.view?.showMyLocation(annotation: annotation)
     }
     
     func fetchVenues() {
@@ -70,9 +65,6 @@ class MapPresenter: NSObject, CLLocationManagerDelegate {
         }).subscribe(onNext: { (annotations) in
             
             self.annotations = annotations
-            if let myLocation = self.myLocationAnnotation {
-                self.annotations.append(myLocation)
-            }
             self.view?.showVenues(annotations)
         }, onError: { (error) in
             
